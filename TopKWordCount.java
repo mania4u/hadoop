@@ -51,7 +51,7 @@ public class TopKWordCount {
 			}
 		} 
 
-		// Emit the results in te cleanup stage
+		// Emit the results in the cleanup stage
 		@Override
 		protected void cleanup(Reducer<Text, IntWritable, Text, IntWritable>.Context context) throws IOException, InterruptedException {
 			Text key = new Text();
