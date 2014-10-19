@@ -20,7 +20,7 @@ public class FixedLengthWordCount {
         StringTokenizer tokenizer = new StringTokenizer(line);
         while (tokenizer.hasMoreTokens()) {
             word.set(tokenizer.nextToken());
-            if (word.toString().length() == 7) {
+            if (word.toString().length() == 5) {
                 context.write(word, one);
             }
         }
